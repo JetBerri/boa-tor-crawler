@@ -1,0 +1,24 @@
+engines:
+  - name: Ahmia
+    url: "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/search/?q=%s&t=74294d"
+
+  - name: Torch
+    url: "http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=%s&DEFAULTOP=and&DB=default&FMT=query&xDB=default"
+
+  - name: VolkAn
+    url: "http://volkancfgpi4c7ghph6id2t7vcntenuly66qjt6oedwtjmyj4tkk5oqd.onion/search?q=%s"
+
+  - name: Search7
+    url: "http://search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion/result.php?search=%s"
+
+  - name: OnionLand
+    url: "http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=%s"
+
+  - name: Us63
+    url: "http://us63bgjkxwpyrpvsqom6kw3jcy2yujbplkhtzt64yykt42ne2ms7p4yd.onion/?q=%s"
+
+  - name: Tor66
+    url: "http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=%s"
+
+  - name: TorchDeep
+    url: "http://torchdeedp3i2jigzjdmfpn5ttjhthh5wbmda2rr3jvqjg5p77c54dqd.onion/search?query=%s&action=search"

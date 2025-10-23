@@ -1,0 +1,8 @@
+SOCKSPort 0.0.0.0:9050
+ControlPort 0.0.0.0:9051
+ClientOnly 1
+ExitRelay 0
+AvoidDiskWrites 1
+RunAsDaemon 0
+DataDirectory /var/lib/tor
+Log notice stdout

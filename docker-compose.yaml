@@ -1,0 +1,32 @@
+services:
+  tor-proxy:
+    build:
+      context: ./tor-proxy
+    container_name: tor-proxy
+    restart: always
+    ports:
+      - "9050:9050"   # SOCKS5 proxy for Tor
+      - "9051:9051"   # Control port (optional)
+    healthcheck:
+      test: ["CMD-SHELL", "nc -z 127.0.0.1 9050 || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+  postgres:
+    image: postgres:16
+    container_name: tor-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: crawler
+      POSTGRES_PASSWORD: crawlerpass
+      POSTGRES_DB: torcrawl
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U crawler"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
