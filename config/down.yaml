@@ -1,0 +1,4 @@
+down_engines:
+
+  - name: Torch
+    url: "http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=%s&DEFAULTOP=and&DB=default&FMT=query&xDB=default"

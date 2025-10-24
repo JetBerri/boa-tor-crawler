@@ -1,11 +1,9 @@
 #ifndef PARSER_H
 #define PARSER_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <regex.h>
+#include <libpq-fe.h>
 
-// Parse HTML and extract all .onion links
-void extract_onion_links(const char *html, const char *query, const char *engine_name);
+void extract_onion_links(PGconn *conn, const char *html, const char *query, const char *engine_name);
+char *url_encode(const char *str);
 
-#endif
+#endif // PARSER_H

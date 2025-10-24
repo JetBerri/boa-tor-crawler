@@ -2,9 +2,6 @@ engines:
   - name: Ahmia
     url: "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/search/?q=%s&t=74294d"
 
-  - name: Torch
-    url: "http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=%s&DEFAULTOP=and&DB=default&FMT=query&xDB=default"
-
   - name: VolkAn
     url: "http://volkancfgpi4c7ghph6id2t7vcntenuly66qjt6oedwtjmyj4tkk5oqd.onion/search?q=%s"
 

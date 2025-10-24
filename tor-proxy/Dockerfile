@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-LABEL maintainer="Dioni Anton <jetberri@quersystem.net>"
+LABEL maintainer="Diqueran <diqueran@diqueran.net>"
 LABEL description="Stable Tor SOCKS5 proxy for crawler"
 
 RUN apk add --no-cache tor netcat-openbsd

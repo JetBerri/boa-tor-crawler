@@ -1,14 +1,8 @@
 #ifndef LOG_H
 #define LOG_H
 
-#include <stdio.h>
-#include <time.h>
-#include <stdarg.h>
+void log_init(const char *path);
+void log_close(void);
+void log_message(const char *level, const char *fmt, ...);
 
-#define LOG_PATH "./logs"
-
-void log_init();
-void log_message(const char *level, const char *format, ...);
-void log_close();
-
-#endif
+#endif // LOG_H
