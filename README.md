@@ -115,8 +115,8 @@ Each component runs inside its own container:
 - At least moderate bandwidth — Tor network connections are slower by nature  
 
 ### Clone the repository  
-``` git clone https://github.com/JetBerri/boa-tor-crawler.git  
-cd boa-tor-crawler ```
+``` git clone https://github.com/JetBerri/boa-tor-crawler.git ```
+```cd boa-tor-crawler ```
 
 ### Build and start the crawler system  
 ``` docker compose up -d ```  
@@ -138,8 +138,8 @@ This will automatically:
 ``` docker compose restart crawler ```  
 
 ### Rebuild the crawler binary (after making code changes)  
-``` docker compose build crawler  
-docker compose up -d crawler ```  
+``` docker compose build crawler```  
+```docker compose up -d crawler ```  
 
 ### View crawler logs  
 ``` docker compose logs -f crawler ```  
@@ -183,20 +183,6 @@ bitcoin mixer
 darknet markets  
 cryptocurrency  
 ```
-
----
-
-## Database Schema  
-
-```CREATE TABLE IF NOT EXISTS onion_links (
-  id SERIAL PRIMARY KEY,
-  url TEXT UNIQUE NOT NULL,
-  query TEXT,
-  engine TEXT,
-  status TEXT,
-  discovered_at TIMESTAMP DEFAULT (now() at time zone 'utc')
-);
-CREATE UNIQUE INDEX IF NOT EXISTS onion_links_url_key ON onion_links(url);```
 
 ---
 
