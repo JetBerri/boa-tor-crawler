@@ -1,6 +1,6 @@
 # BOA Tor Crawler 🕵️‍♂️  
 <p align="center">
-  <img src="img.png" alt="Logo" width="150">
+  <img src="img.png" alt="Logo" width="300">
 </p>
 [![Stars](https://img.shields.io/github/stars/JetBerri/boa-tor-crawler.svg?style=social&label=Stars)](https://github.com/JetBerri/boa-tor-crawler/stargazers)  
 [![Issues](https://img.shields.io/github/issues/JetBerri/boa-tor-crawler.svg)](https://github.com/JetBerri/boa-tor-crawler/issues)  
