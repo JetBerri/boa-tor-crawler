@@ -18,6 +18,12 @@
 ## Overview 
 **BOA Tor Crawler** is a full-stack, Docker-based crawler designed to discover `.onion` hidden-service links via the Tor network, validate their online status, extract results into a PostgreSQL database, and support large-scale data analysis of dark web ecosystems.  
 
+Here's an example of the performing of the crawler, from my testing it can obtain +50 working onion sites in over a minute.
+
+<p align="center">
+  <img src="example.png" alt="Logo" width="300">
+</p>
+
 ### Key features  
 - Uses `tor-proxy` container to route all crawler traffic through Tor (`socks5h://tor-proxy:9050`)  
 - Stores all discovered `.onion` links in PostgreSQL (`tor-postgres`) with query, engine source, status and timestamp  
