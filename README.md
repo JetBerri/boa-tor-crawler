@@ -21,7 +21,7 @@
 Here's an example of the performing of the crawler, from my testing it can obtain +50 working onion sites in over a minute.
 
 <p align="center">
-  <img src="example.png" alt="Logo" width="300">
+  <img src="example.png" alt="Logo" width="500">
 </p>
 
 ### Key features  
