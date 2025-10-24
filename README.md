@@ -2,9 +2,8 @@
 <p align="center">
   <img src="img.png" alt="Logo" width="300">
 </p>
-[![Stars](https://img.shields.io/github/stars/JetBerri/boa-tor-crawler.svg?style=social&label=Stars)](https://github.com/JetBerri/boa-tor-crawler/stargazers)  
-[![Issues](https://img.shields.io/github/issues/JetBerri/boa-tor-crawler.svg)](https://github.com/JetBerri/boa-tor-crawler/issues)  
-[![License](https://img.shields.io/github/license/JetBerri/boa-tor-crawler.svg)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/JetBerri/boa-tor-crawler.svg?style=social&label=Stars)](https://github.com/JetBerri/boa-tor-crawler/stargazers) [![Issues](https://img.shields.io/github/issues/JetBerri/boa-tor-crawler.svg)](https://github.com/JetBerri/boa-tor-crawler/issues) [![License](https://img.shields.io/github/license/JetBerri/boa-tor-crawler.svg)](LICENSE)
+
 
 ## Overview 
 **BOA Tor Crawler** is a full-stack, Docker-based crawler designed to discover `.onion` hidden-service links via the Tor network, validate their online status, extract results into a PostgreSQL database, and support large-scale data analysis of dark web ecosystems.  
@@ -188,8 +187,8 @@ cryptocurrency
 ---
 
 ## Database Schema  
-```
-CREATE TABLE IF NOT EXISTS onion_links (
+
+```CREATE TABLE IF NOT EXISTS onion_links (
   id SERIAL PRIMARY KEY,
   url TEXT UNIQUE NOT NULL,
   query TEXT,
@@ -197,8 +196,7 @@ CREATE TABLE IF NOT EXISTS onion_links (
   status TEXT,
   discovered_at TIMESTAMP DEFAULT (now() at time zone 'utc')
 );
-CREATE UNIQUE INDEX IF NOT EXISTS onion_links_url_key ON onion_links(url);
-```
+CREATE UNIQUE INDEX IF NOT EXISTS onion_links_url_key ON onion_links(url);```
 
 ---
 
